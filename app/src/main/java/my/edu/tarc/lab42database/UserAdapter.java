@@ -50,6 +50,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
 
     }
 
+    public User getUserAtPosition (int position) {
+        return userList.get(position);
+    }
+
+
     @Override
     public int getItemCount() {
         if(userList != null)
